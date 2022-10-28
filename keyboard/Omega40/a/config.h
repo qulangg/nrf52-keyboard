@@ -144,7 +144,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define IS_COMMAND() ( \
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
 
-static const uint8_t row_pin_array[MATRIX_ROWS] = {15, 14, 11, 20};
+//static const uint8_t row_pin_array[MATRIX_ROWS] = {15, 14, 11, 20};
+//static const uint8_t column_pin_array[MATRIX_COLS] = {27, 28, 29, 30, 31, 12, 13, 16, 17, 18, 19, 10};
+
+static const uint8_t row_pin_array[MATRIX_ROWS] = {15};
 static const uint8_t column_pin_array[MATRIX_COLS] = {27, 28, 29, 30, 31, 12, 13, 16, 17, 18, 19, 10};
 
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
